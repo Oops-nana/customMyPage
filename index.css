@@ -1,0 +1,105 @@
+body{
+    background-color: white;
+    text-align: center;
+    font-size: 1.1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+input{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    border-style: none;
+    background: transparent;
+    outline: none;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*h1{*/
+/*    color: black;*/
+/*    transition: color 0.5s ease-in-out;*/
+/*}*/
+
+.container{
+    /*padding-top: %;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.todoForm{
+    margin: auto;
+    width: 50%;
+    border-bottom: 2px solid white;
+    margin-bottom: 3em;
+}
+
+.todoInput{
+    width: 70%;
+    margin-top: 5px;
+    font-size: 2em;
+    display: inline-block;
+}
+.js-form{
+    color: white;
+}
+
+.js-pending, js-finished{
+    list-style: none;
+    color: white;
+}
+
+.myname{
+    padding: 10px 10px;
+    font-size: 50px;
+}
+
+.clock{
+    color: white;
+    transition: color 0.5s ease-in-out;
+    margin-top: 25vh;
+    font-size: 6em;
+}
+
+.clicked{
+    color: #7f8c8d;
+}
+
+.form,.greetings{
+    display: none;
+}
+
+.weatherPlace{
+    color: white;
+    position: absolute;
+    top: 3%;
+    right: 2%;
+}
+
+.showing{
+    display: block;
+}
+
+.bgImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity : 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
